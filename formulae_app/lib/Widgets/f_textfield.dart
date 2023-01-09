@@ -26,9 +26,9 @@ class _fTextBoxState extends State<fTextBox> {
       child: Container(
         decoration: BoxDecoration(
           // ignore: prefer_const_constructors
-          color: Color.fromARGB(255, 255, 255, 255),
+          // color: Color.fromARGB(255, 255, 255, 255),
           border: Border.all(
-            color: Color.fromARGB(255, 177, 177, 177),
+            color: Color.fromARGB(255, 20, 93, 160),
           ),
           borderRadius: BorderRadius.circular(10),
         ),
@@ -36,9 +36,12 @@ class _fTextBoxState extends State<fTextBox> {
           decoration: InputDecoration(
             contentPadding: EdgeInsets.only(left: 10),
             hintText: hText,
+            hintStyle: TextStyle(
+              color: Color.fromARGB(100, 12, 45, 72),
+            ),
             border: InputBorder.none,
           ),
-          cursorColor: Colors.grey,
+          cursorColor: Color.fromARGB(255, 12, 45, 72),
           cursorWidth: 2.5,
           autocorrect: false,
           obscureText: hideText,

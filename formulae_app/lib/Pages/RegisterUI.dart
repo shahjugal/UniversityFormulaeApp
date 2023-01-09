@@ -9,7 +9,7 @@ class RegisterUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Color.fromARGB(255, 177, 212, 224),
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -19,17 +19,21 @@ class RegisterUI extends StatelessWidget {
               children: [
                 // ignore: prefer_const_constructors
                 SizedBox(
-                  height: 50,
+                  height: 20,
                 ),
                 // ignore: prefer_const_constructors
                 Text(
                   "Get Started",
                   // ignore: prefer_const_constructors
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 12, 45, 72),
+                  ),
                 ),
                 // ignore: prefer_const_constructors
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 // ignore: prefer_const_constructors
                 Text(
@@ -37,24 +41,33 @@ class RegisterUI extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w300,
+                    color: Color.fromARGB(255, 12, 45, 72),
                   ),
                 ),
                 const SizedBox(
-                  height: 50,
+                  height: 25,
+                ),
+                Icon(
+                  Icons.person_add,
+                  size: 175,
+                  color: Color.fromARGB(255, 20, 93, 160),
+                ),
+                const SizedBox(
+                  height: 17,
                 ),
                 fTextBox("University Email", false),
                 SizedBox(
-                  height: 25,
+                  height: 10,
                 ),
                 fTextBox("Password", true),
-                SizedBox(height: 30),
+                SizedBox(height: 10),
                 Center(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Container(
                       height: 50,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 42, 42, 42),
+                        color: Color.fromARGB(255, 20, 93, 160),
                         borderRadius:
                             BorderRadiusDirectional.all(Radius.circular(10)),
                       ),
@@ -70,7 +83,7 @@ class RegisterUI extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 15),
                 Center(
                   child: Column(
                     // ignore: prefer_const_literals_to_create_immutables
@@ -79,6 +92,7 @@ class RegisterUI extends StatelessWidget {
                         "Already have an account?",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          color: Color.fromARGB(255, 12, 45, 72),
                         ),
                       ),
                       SizedBox(
@@ -88,6 +102,7 @@ class RegisterUI extends StatelessWidget {
                         "Other options.",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          color: Color.fromARGB(255, 12, 45, 72),
                         ),
                       ),
                     ],

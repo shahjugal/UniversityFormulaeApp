@@ -9,7 +9,7 @@ class LoginUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Color.fromARGB(255, 177, 212, 224),
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -25,7 +25,10 @@ class LoginUI extends StatelessWidget {
                 Text(
                   "Get Started",
                   // ignore: prefer_const_constructors
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(255, 12, 45, 72)),
                 ),
                 // ignore: prefer_const_constructors
                 SizedBox(
@@ -37,15 +40,16 @@ class LoginUI extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w300,
+                    color: Color.fromARGB(255, 12, 45, 72),
                   ),
                 ),
                 SizedBox(
                   height: 25,
                 ),
                 Icon(
-                  Icons.person_pin_circle_outlined,
+                  Icons.person,
                   size: 175,
-                  color: Color.fromARGB(255, 42, 42, 42),
+                  color: Color.fromARGB(255, 20, 93, 160),
                 ),
                 const SizedBox(
                   height: 17,
@@ -62,7 +66,7 @@ class LoginUI extends StatelessWidget {
                     child: Container(
                       height: 50,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 42, 42, 42),
+                        color: Color.fromARGB(255, 20, 93, 160),
                         borderRadius:
                             BorderRadiusDirectional.all(Radius.circular(10)),
                       ),
@@ -87,6 +91,7 @@ class LoginUI extends StatelessWidget {
                         "Not yet registered?",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          color: Color.fromARGB(255, 12, 45, 72),
                         ),
                       ),
                       SizedBox(
@@ -96,6 +101,7 @@ class LoginUI extends StatelessWidget {
                         "Other options.",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          color: Color.fromARGB(255, 12, 45, 72),
                         ),
                       ),
                     ],
