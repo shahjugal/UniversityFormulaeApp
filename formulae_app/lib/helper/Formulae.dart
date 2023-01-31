@@ -5,8 +5,8 @@ class Formulae {
   String? name;
   String? description;
   String? latexString;
-  String? applications;
 
+  List<String>? applications;
   List<String>? imageLinks;
   List<String>? ytLinks;
   List<String>? driveLinks;

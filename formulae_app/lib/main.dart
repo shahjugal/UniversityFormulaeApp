@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Pages/FormulaPage.dart';
 import 'Pages/LoginUI.dart';
 import 'Pages/RegisterUI.dart';
 import 'Pages/FormulaListPage.dart';
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: FormulaListPage(),
     );
   }
